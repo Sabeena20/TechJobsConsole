@@ -72,7 +72,7 @@ namespace TechJobsConsole
                 //string aValue = row[column];
                 foreach (KeyValuePair<string, string> keyValuePair in row)
                 {
-                    if (keyValuePair.Value.ToLower().Equals(value.ToLower()))
+                    if (keyValuePair.Value.ToLower().Contains(value.ToLower()))
                     {
                         if (!jobs.Contains(row))
                         {
